@@ -25,13 +25,13 @@ const nums =[4,5,68,9,1]
 addition=sumOf(nums)
 console.log(addition); 
 
-//Add Items from another array to another
+//6.Add Items from another array to another
 let paid =['mose', 'kim', 'atandi']
 let unpaid =['harry','karume']
 
 paid.unshift(...unpaid)
 
-console.log(paid); */
+console.log(paid); 
 
 let greetings = {
     0: 'Hi',
@@ -43,4 +43,9 @@ let greetings = {
     }
 }
   greetings.prepend('Good day', 'Bye');
-  console.log(greetings);
+  console.log(greetings); */
+
+//7. Remove item using splice method
+let marangi=['red','blue','yellow']
+marangi.splice(2,1,'purple')
+console.log(marangi);
