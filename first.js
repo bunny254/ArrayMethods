@@ -20,10 +20,17 @@ fruits.unshift('Mango')
 console.log(fruits);
 console.log(fruits.length); 
 
-//5. Add items in an array
-const nums =[4,5,68,9,1]
-addition=sumOf(nums)
-console.log(addition); 
+//5. Add items in an array using a function
+let numbs=[9,10,11,1]
+const addItemsArray=(numbs)=>{
+  let sum =0;
+  for (let i=0;i<numbs.length;i++){
+    sum += numbs[i]
+  }
+  return sum
+}
+console.log(addItemsArray(numbs));
+
 
 //6.Add Items from another array to another
 let paid =['mose', 'kim', 'atandi']
@@ -43,9 +50,18 @@ let greetings = {
     }
 }
   greetings.prepend('Good day', 'Bye');
-  console.log(greetings); */
+  console.log(greetings); 
 
 //7. Remove item using splice method
 let marangi=['red','blue','yellow']
 marangi.splice(2,1,'purple')
-console.log(marangi);
+console.log(marangi);  */
+
+//8. Reduce Function
+
+let more=[20,30,50,100]
+let sum=more.reduce((prev,current)=>{
+  return prev * current
+});
+console.log(sum);
+
