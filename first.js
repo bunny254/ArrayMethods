@@ -55,7 +55,7 @@ let greetings = {
 //7. Remove item using splice method
 let marangi=['red','blue','yellow']
 marangi.splice(2,1,'purple')
-console.log(marangi);  */
+console.log(marangi);  
 
 //8. Reduce Function
 
@@ -63,5 +63,19 @@ let more=[20,30,50,100]
 let sum=more.reduce((prev,current)=>{
   return prev * current
 });
-console.log(sum);
+console.log(sum); */
 
+// Given a list of integers, det the oroduct fi all the integers us even or odd:
+  // a.) Return sum of integers if the product of integers is even.
+  // b.) Returb 0 if the product of all integers is odd.
+
+  
+let hingegers=[4,4,2,0.3]
+let product= hingegers.reduce((prev,current)=>{
+  if ( prev * current %2 ==0){
+    return prev + current
+  }
+  else {
+    return 0};
+})
+console.log(product); 
